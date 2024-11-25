@@ -1,0 +1,73 @@
+body {
+    background-color: rgb(3, 3, 66);
+    background-size: cover; /* Ensure the image covers the entire page */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating the image */
+    position: relative;
+    /* height: 100vh;  */
+}
+/* Basic styling for the button */
+.menu-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.5s;
+}
+.menu-btn:hover{
+    background-color: #7ebdff;
+}
+
+/* Style for the menu pop-up */
+.menu {
+    display: none; /* Hide the menu by default */
+    position: absolute;
+    top: 50px; /* Adjust position of the menu */
+    left: 0;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: 200px;
+    opacity: 0; /* Start with 0 opacity */
+    transform: translateY(-10px); /* Start with a small offset */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition for both opacity and transform */
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    padding: 12px 16px;
+    cursor: pointer;
+}
+
+.menu ul li:hover {
+    background-color: #ddd; /* Highlight on hover */
+}
+
+/* Container for positioning the button and menu */
+.menu-container {
+    position: relative;
+    display: inline-block;
+}
+.menu-option {
+    width: 100%;
+    height: 100%;
+    padding: 12px 16px;
+    text-align: left;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    transition: background-color 0.5s ;
+}
+
+.menu-option:hover {
+    background-color: #ddd; /* Highlight on hover */
+}
