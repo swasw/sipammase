@@ -71,3 +71,17 @@ body {
 .menu-option:hover {
     background-color: #ddd; /* Highlight on hover */
 }
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+.slides {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+.active {
+    display: block;
+}
