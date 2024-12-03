@@ -4,8 +4,57 @@ body {
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Prevent repeating the image */
     position: relative;
+    margin: 0;
     /* height: 100vh;  */
 }
+
+.header{
+    background-color: #242458; /* Warna biru sesuai gambar */
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /*Membuat header tetap berada di atas*/
+    top: 0;
+    width: 100%; /* Pastikan header memanjang sesuai layar */
+    z-index: 1000; /* Prioritaskan header di atas elemen lain */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Tambahkan sedikit bayangan */
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 80px; /* Sesuaikan ukuran logo */
+    margin-right: 30px;
+}
+
+.header-title {
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+.image-sipammase{
+    display: flex; 
+    justify-content: space-around;
+    align-items: center; 
+    flex-wrap: wrap; 
+    padding: 70px; 
+    /* background-color: rgb(3, 3, 66); Warna latar sesuai contoh */
+    width: 100%;
+}
+
+
 /* Basic styling for the button */
 .menu-btn {
     padding: 10px 20px;

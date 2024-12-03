@@ -39,7 +39,7 @@ body {
 .marquee-text {
     display: inline-block;
     white-space: nowrap;
-    animation: marquee 15s linear infinite; /* Animasi teks bergerak */
+    animation: marquee 15s linear infinite; 
 }
 
 @keyframes marquee {

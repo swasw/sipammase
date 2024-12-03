@@ -7,6 +7,10 @@
   margin: auto;
 }
 
+h2{
+  color: white;
+}
+
 /* Hide the images by default */
 .mySlides {
   display: none;
