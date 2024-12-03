@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.info-bar {
+    display: flex;
+    align-items: center;
+    background-color: #002147; /* Warna biru gelap */
+    color: #fff;
+    height: 50px; /* Tinggi bar */
+    overflow: hidden;
+}
+
+.info-label {
+    background-color: #FFD700; /* Warna kuning */
+    color: #000;
+    height: 100%; /* Sesuaikan tinggi dengan info-bar */
+    display: flex;
+    align-items: center; /* Teks rata tengah vertikal */
+    justify-content: center; /* Teks rata tengah horizontal */
+    padding: 0 15px; /* Padding kiri dan kanan */
+    font-weight: bold;
+    gap: 5px; /* Jarak antara ikon dan teks */
+    box-sizing: border-box; /* Sertakan padding dalam ukuran */
+}
+
+.info-label i {
+    font-style: normal; /* Ikon atau teks tambahan */
+}
+
+.marquee-container {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+}
+
+.marquee-text {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 15s linear infinite; /* Animasi teks bergerak */
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}

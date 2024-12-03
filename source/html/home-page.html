@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Datang Di SIPAMMASE</title>
+    <link rel="stylesheet" href="/source/css/home-page.css">
+    <link rel="stylesheet" href="/source/css/slideshow_image.css">
+    <link rel="stylesheet" href="/source/css/live_report.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
+</head>
+<body>
+    <div class="menu-container">
+        <!-- Button that will toggle the menu -->
+        <button class="menu-btn" onclick="toggleMenu()">
+            <img src="/assets/Hamburger_icon.svg.png" alt="" width="20" height="20">
+        </button>
+
+        <!-- Menu pop-up that will show/hide on button click -->
+        <div class="menu" id="menu">
+            <ul>
+                <!-- <li><a href="login-page.html">Login</a></li>
+                <li><a href="https://sipammase.kemenkumham.go.id/perancang">Daftar Perancang</a></li> -->
+                <li><button class="menu-option" onclick="navigateTo('login-page.html')">Login</button></li>
+                <li><button class="menu-option" onclick="navigateTo('https://sipammase.kemenkumham.go.id/perancang')">Daftar Perancang</button></li>
+            </ul>
+        </div>
+    </div>
+    
+    <img src="/assets/sipammase.jpeg" alt="">
+
+    <script src="/source/js/script.js"></script>
+
+    <div class="info-bar">
+        <div class="info-label">
+            <i>ℹ</i> 
+            Update Informasi
+        </div>
+        <div class="marquee-container">
+            <div id="marquee-text" class="marquee-text">
+            </div>
+        </div>
+    </div>
+
+    <script src="/source/js/live_report.js"></script>
+
+    <br>
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 4</div>
+          <img src="/assets/keg1.jpg" style="width:100%">
+          <div class="text">Caption Text</div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 4</div>
+          <img src="/assets/keg2.jpg" style="width:100%">
+          <div class="text">Caption Two</div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 4</div>
+          <img src="/assets/keg3.jpg" style="width:100%">
+          <div class="text">Caption Three</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="/assets/keg4.jpg" style="width:100%">
+            <div class="text">Caption Four</div>
+          </div>
+      
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+      <script src="/source/js/slideshow_image.js"></script>
+</body>
+</html>
