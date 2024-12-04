@@ -200,8 +200,9 @@ body {
 .slideshow-container {
     position: relative;
     justify-items: center;
-    width: 100%;
+    width: 65%;
     max-width: 100%; /* Ensures container does not exceed viewport width */
+    padding:0 25px 0 0;
   }
   
   /* Slide */
