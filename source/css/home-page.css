@@ -21,6 +21,28 @@ body {
     flex: 1; /* Allows items to grow and fill space equally */
 }
 
+.logbtn-wrap{
+    display: flex;
+    width: 25%;
+    justify-content: end;
+}
+.login-btn{
+    font-weight: bold;
+    background-color: green;
+    border-radius: 15px;
+    /* padding: 3px 8px 3px 8px; */
+    padding-left: 45px;
+    padding-right: 45px;
+    background-color: transparent;
+    border: 2px solid yellow;
+    color: yellow;
+    transition: background-color 0.7s,color 0.7s;
+}
+.login-btn:hover{
+    background-color: yellow;
+    color: black;
+}
+
 .header{
 
     background-color: transparent; /* Warna biru sesuai gambar */
@@ -49,6 +71,7 @@ body {
     display: flex;
     align-items: center;
     padding: 1%;
+    width: 100%;
 }
 
 .logo {
@@ -90,6 +113,7 @@ body {
     justify-content: center;
     align-items: center;
     color: white;
+    padding-left: 1.8%;
 }
 
 
@@ -204,4 +228,13 @@ body {
   }
   .dot{
     display: flex;  
+  }
+
+  .text{
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0));
+    /* filter: blur(2px); */
+  }
+
+  .captiontext{
+    filter: none;
   }
