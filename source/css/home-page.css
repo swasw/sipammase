@@ -41,8 +41,45 @@ body {
 .login-btn:hover{
     background-color: yellow;
     color: black;
+    cursor: pointer;
 }
 
+.card-name{
+    align-items: start;
+}
+
+.step-card{
+    padding: 5px;
+}
+
+.column-card{
+    background-color: #D34040;
+    padding: 15px 30px 15px 30px;
+    /* border-radius: 12px; */
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    margin-top: 10px;
+}
+.card-foot{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 7px;
+    background-color:#822424;
+    width: 100%;
+    margin-bottom: 0px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.card-foot a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
 .header{
 
     background-color: rgb(3, 3, 66); /* Warna biru sesuai gambar */
