@@ -45,7 +45,7 @@ body {
 
 .header{
 
-    background-color: transparent; /* Warna biru sesuai gambar */
+    background-color: rgb(3, 3, 66); /* Warna biru sesuai gambar */
     backdrop-filter: blur(20px);
     box-shadow: 0 0 10 rgba(0,0,0,.2);
     color: white;
