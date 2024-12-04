@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(3, 3, 66);
+    /* background-color: rgb(3, 3, 66); */
     background-size: cover; /* Ensure the image covers the entire page */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Prevent repeating the image */
@@ -363,3 +363,28 @@ a{
   .captiontext{
     filter: none;
   }
+  
+/* Styles for footer */
+.footer {
+    background-color: #202060;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
