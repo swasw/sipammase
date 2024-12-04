@@ -8,8 +8,24 @@ body {
     /* height: 100vh;  */
 }
 
+.row {
+    display: flex;  /* Enable flexbox layout */
+    justify-content: space-between; /* Space items evenly */
+    /* gap: 10px; Optional, adds space between items */
+    height: 100%;
+}
+.column {
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+    flex: 1; /* Allows items to grow and fill space equally */
+}
+
 .header{
-    background-color: #242458; /* Warna biru sesuai gambar */
+
+    background-color: transparent; /* Warna biru sesuai gambar */
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10 rgba(0,0,0,.2);
     color: white;
     padding: 10px 20px;
     display: flex;
@@ -32,6 +48,7 @@ body {
 .logo-section {
     display: flex;
     align-items: center;
+    padding: 1%;
 }
 
 .logo {
@@ -43,15 +60,36 @@ body {
     font-size: 22px;
     line-height: 1.5;
 }
-
+.update-kegiatan {
+    margin-top: 8%;
+    background-image: url("/assets/gedung-kb-kecil.jpg");
+    width: 100%;
+    height: 100vh; 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
 .image-sipammase{
     display: flex; 
     justify-content: space-around;
     align-items: center; 
-    flex-wrap: wrap; 
-    padding: 70px; 
+    /* flex-wrap: wrap;  */
+    
+    /* padding: 70px;  */
     /* background-color: rgb(3, 3, 66); Warna latar sesuai contoh */
     width: 100%;
+}
+
+.image-sipammase img{
+    width: 100%;
+    height: auto;
+}
+
+.welcome-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
 
 
@@ -120,12 +158,12 @@ body {
 .menu-option:hover {
     background-color: #ddd; /* Highlight on hover */
 }
-.slideshow-container {
+/* .slideshow-container {
     position: relative;
     max-width: 100%;
     margin: auto;
     overflow: hidden;
-}
+} */
 .slides {
     display: none;
     width: 100%;
@@ -134,3 +172,36 @@ body {
 .active {
     display: block;
 }
+
+.slideshow-container {
+    position: relative;
+    justify-items: center;
+    width: 100%;
+    max-width: 100%; /* Ensures container does not exceed viewport width */
+  }
+  
+  /* Slide */
+  .mySlides {
+    display: none;  /* Hide slides initially */
+    width: 100%; /* Make each slide 100% width */
+    height: 400px; /* Fixed height for all slides */
+    overflow: hidden; /* Hide anything that overflows the container */
+    position: relative;
+    display: flex; /* Flexbox layout for internal alignment */
+    justify-content: center; /* Center the content */
+    align-items: center; /* Align items vertically in the center */
+  }
+  
+  /* Image within the slide */
+  .mySlides img {
+    width: 100%;  /* Ensure the image takes up full width */
+    height: 100%; /* Ensure the image takes up full height */
+    object-fit: cover; /* Crop and cover the area */
+  }
+
+  .dot-list{
+    display: flex;
+  }
+  .dot{
+    display: flex;  
+  }
