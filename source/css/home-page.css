@@ -224,6 +224,9 @@ a{
     background-position: center; 
     background-repeat: no-repeat; 
 }
+.update-kegiatan :hover{
+    /* background-color: rgba(0, 0, 0, 0.5); */
+}
 .image-sipammase{
     display: flex; 
     justify-content: space-around;
@@ -357,7 +360,9 @@ a{
   }
 
   .text{
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0));
+    /* background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0)); */
+    background: rgba(36, 36, 88, 0.5);
+    /* filter: blur(2px); */
   }
 
   .captiontext{
@@ -387,4 +392,37 @@ a{
 
 .footer-link:hover {
     text-decoration: underline;
+}
+
+.schedule-container{
+    display: flex;
+    background-color: #242458;
+    width: 100%;
+    height: 120px;
+    margin-top: 4%;
+    border-radius: 8px;
+}
+
+.rows{
+    width: 100%;
+    display: flex;  /* Enable flexbox layout */
+    justify-content: space-between; /* Space items evenly */
+    /* gap: 10px; Optional, adds space between items */
+    /* height: 100%; */
+}
+
+.rowtext{
+    margin: 0;
+    display: flex;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+}
+
+.scheduletext-container{
+    width: 35%;
+    margin-left: 4%;
+    padding-right: 3%;
+    padding-top: 1%;
+    /* margin-bottom: 200px; */
 }
